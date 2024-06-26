@@ -9,7 +9,7 @@ int main(){
 		
 	//addition of two numbers
 	int sum=firstnum+secondnum;
-		printf("\nThe subtracted value is:%d",sum);
+		printf("\nThe addition value is:%d",sum);
 	
 	//multiplication of two numbers	
 		int mult=firstnum*secondnum;
