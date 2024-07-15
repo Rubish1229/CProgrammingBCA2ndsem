@@ -27,7 +27,7 @@ int main(){
 	printf("Press y for continue or any other key for exit.");
 	
 	scanf(" %c",&option);
-}while(option == 'y' || option == 'y');
+}while(option == 'Y' || option == 'y');
 	
 return 0;
 	
