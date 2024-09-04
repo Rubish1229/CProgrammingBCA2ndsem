@@ -1,52 +1,3 @@
-#include<stdio.h>
-void marks();
-int main()
-{
-	void marks();
-}
-void marks()
-{
-	double (Math,English,Account,Microprocessor,Clanguage),per,total;
-	printf("Enter the marks of Math:");
-	scanf("%lf",&Math);
-	printf("Enter the marks of English:");
-	scanf("%lf",&English)
-	printf("Enter the marks of Account:");
-	scanf("%lf",&Account);
-	printf("Enter the marks of Microprocessor:");
-	scanf("%lf",&Microprocessor);
-	printf("Enter the marks of Clanguage:");
-	scanf("%lf",&Clanguage);
-	total=Math+English+Account+Microprocessor+Clanguage;
-	if(per>=90)
-	{
-		printf("Grade A ");
-	}
-else if(per>=80)
- {
- printf("Grade B);
-}
-else if("per>=70")
-{
-	printf("Grade C");
-}
-else if("per>=60")
-{
-	printf("Grade D");
-}
-else if("per>=50")
-{
-	printf("Grade E");
-}
-else if("per>=40"){
-	printf("Grade F");
-}
-else{
-	printf("Fail");
-}
-
-
-}
 
 
 
@@ -179,6 +130,55 @@ else{
 //		printf("The sum is:%d",sum);
 //	
 //}
+
+
+
+
+
+
+
+
+//with return type with parameter
+#include<stdio.h>
+
+int oddeven(int num){
+
+	if(num%2==0)
+	{
+		return 0;
+	}
+	else{
+		return 1;
+	}
+}
+int main()
+{
+	int a,num;
+		printf("Enter the value for num:");
+	scanf("%d",&num);
+	
+	a=oddeven(num);	
+if(a==0)
+	{
+		printf("The number is even.");
+	}
+	else{
+		printf("The number is odd.");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -15,11 +15,6 @@ int main()
 	else{
 		printf("The number is composite");
 	}
-	
-	
-	
-	
-	return 0;
 }
 int primecom(int x)
 {
@@ -29,8 +24,7 @@ int primecom(int x)
 		if(x%i==0)
 		{
 			count ++;
-		}
-		
+		}	
 	}
 	if(count==2)
 	{
