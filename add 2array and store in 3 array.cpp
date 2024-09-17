@@ -1,3 +1,5 @@
+//WAP to read two array of size 5 and store the sum into third array.
+
 #include<stdio.h>
 int main()
 {

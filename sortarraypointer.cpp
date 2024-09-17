@@ -1,18 +1,31 @@
 
+//sorting array using pointer.
 
 #include <stdio.h>
+//This includes the standard input/output library in C.
 
-// Function to perform bubble sort using pointers
-void bubbleSort(int* array, int size) {
+//Function to perform bubble sort using pointers
+void bubbleSort(int* array, int size) 
+//int*array: A pointer to the first element of the array that needs to be sorted.
+//int size: The number of elements in the array.
+{
     int* ptr1;
     int* ptr2;
+    //Here these pointers will be used to point to two adjacent elements in the array that need to be compared.
     int temp;
+//    ////vacant memory to swap the value.
     for (int i = 0; i < size - 1; i++) {
-        for (int j = 0; j < size - 1 - i; j++) {
+        for (int j = 0; j < size - 1 - i; j++)
+//		//The outer loop controls the number of passes needed (which is size - 1)---
+//		// and the inner loop goes through the array elements to perform the comparisons and swaps.
+		 {
             ptr1 = array + j;
+            if (*ptr1 > *ptr2)
             ptr2 = array + j + 1;
-            if (*ptr1 > *ptr2) {
-                // Swap the elements using pointers
+//			//This logic sets ptr1 to point to the j element of the array and ptr2 to the next element (j + 1).
+			//simply pointer 2 ko value is set next to pointer1 value.
+				 {
+//                // Swap the elements using pointers
                 temp = *ptr1;
                 *ptr1 = *ptr2;
                 *ptr2 = temp;
@@ -21,47 +34,48 @@ void bubbleSort(int* array, int size) {
     }
 }
 
+
 int main() {
     int array[100], n;
-
-    // Ask the user for the number of elements
+//	//int array[100]: Declares an array to store up to 100 integers.
+//	//int n: This will store the number of elements entered by the user.
+//		
+//
+//    // Asking the user to enter number of elements.
     printf("Enter the number of elements: ");
     scanf("%d", &n);
-
-    // Input the elements of the array
+//
+//    // asking to enter list of elements of array one by one.
     printf("Enter the elements of the array:\n");
     for (int i = 0; i < n; i++) {
         scanf("%d", &array[i]);
     }
-
-    // Sort the array using bubble sort with pointers
+//
+//    // Sort the array using bubble sort with pointers
     bubbleSort(array, n);
-
-    // Print the sorted array
+//    //Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, 
+//	//and swaps them if they are in the wrong order which is repeated until the list is sorted.
+//	
+//    // Display the sorted array
     printf("Sorted array: \n");
     for (int i = 0; i < n; i++) {
         printf("%d ", *(array + i));
+//  //After sorting, the program prints the sorted array by dereferencing (a technique for accessing or manipulating data 
+//  //stored in a memory location pointed to by a pointer. )the pointer (array + i), which points 
+//  //to each element of the array turn by turn.
+//
     }
     printf("\n");
 
     return 0;
+    //main() function returns 0 to indicate that the program has executed successfully.
 }
-//```
-//
-//### Explanation:
-//1. **Pointer Arithmetic**:
-//   - The array elements are accessed and manipulated using pointers (e.g., `ptr1 = array + j`).
-//   - Pointer arithmetic allows us to move through the array by adding an offset to the base pointer (`array`).
-//
-//2. **Bubble Sort Algorithm**:
-//   - The bubble sort algorithm compares adjacent elements in the array. If the first is greater than the second, they are swapped.
-//   - The sorting continues until the entire array is sorted.
-//
-//3. **Pointer-Based Swapping**:
-//   - Swapping of elements is performed using pointer dereferencing (`*ptr1` and `*ptr2`).
-//
-//### Key Points:
-//- This program emphasizes pointer arithmetic for array manipulation and sorting.
-//- Using pointers for swapping and comparison gives more direct control over memory management, showcasing the power of pointers in C.
-//
-//This program can be compiled and run in any standard C environment.
+
+
+
+
+
+
+
+
+
