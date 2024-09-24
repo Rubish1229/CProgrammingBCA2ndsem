@@ -95,21 +95,21 @@
 
 
 
-
-#include<stdio.h>
-void isum(int ,int);
-void isum(int x, int y)
-{
-	int sum=x+y;
-	printf("The sum id:%d",sum);
-}
-int main()
-{
-	isum(1,2);
-	isum(1,10);
-}
-
-
+//
+//#include<stdio.h>
+//void isum(int ,int);
+//void isum(int x, int y)
+//{
+//	int sum=x+y;
+//	printf("The sum id:%d",sum);
+//}
+//int main()
+//{
+//	isum(1,2);
+//	isum(1,10);
+//}
+//
+//
 
 
 

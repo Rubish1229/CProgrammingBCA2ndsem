@@ -1,4 +1,4 @@
-o//pairing an array to function
+//pairing an array to function
 //array passing as a paremeter
 
 #include<stdio.h>

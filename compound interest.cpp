@@ -14,10 +14,10 @@ scanf("%d",&P);
 printf("Enter value of interest rate:");
 scanf("%d",&R);
 
-printf("Enter number of time periods elapsed:");
+printf("Enter number of time periods:");
 scanf("%d",&t);
 
-CI=P*(1+R/100)^t;
+CI=P*(pow(1+R/100)^t;
 printf("The compound interest is:%f",CI);
 
 
