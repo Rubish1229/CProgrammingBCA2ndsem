@@ -1,4 +1,4 @@
-/ WAP to sort an array using pointer or to pass ponter as a function.
+// WAP to sort an array using pointer or to pass ponter as a function.
 
 
 #include<stdio.h>
