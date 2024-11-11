@@ -13,7 +13,7 @@ struct employee{
 int main()
 {
 	struct employee emp[50];
-	int i,j;
+	int i;
 	
 	for(i=0;i<3;i++)
 	{
@@ -30,17 +30,23 @@ int main()
 			scanf("%s",emp[i].department);
 			
 		}
+		printf("\nEmployess in JAVA:\n");
 		for(i=0;i<3;i++)
 		{
 			if(strcmp(emp[i].department,"JAVA_DEVELOPER")==0){
 			
-				printf("ID=%s",emp[i].id);
-				printf("Salary=%d",emp[i].salary);
-				printf("Department=%s",emp[i].department);
+				printf("ID=%s\n",emp[i].id);
+				printf("Salary=%d\n",emp[i].salary);
+				printf("Department=%s\n",emp[i].department);
+				printf("-------\n");
 			}
 		}
 		
-	}
+
+}
+		
+	
+	
 	
 	
 	

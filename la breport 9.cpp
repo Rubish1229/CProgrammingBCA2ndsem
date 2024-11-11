@@ -1,22 +1,27 @@
-//Write a Program to Search an element in array.
+//Write a program to determine whether the input character is capital or small letter,
+//digits or special symbol.
 #include<stdio.h>
 int main()
 {
-	int arr[10]={10,20,30,40,50,60,70,80,90,100};
-	int i,element;
-	printf("Enter any element:\n");
-	scanf("%d",&element);
+	char input;
 	
-	for(i=0;i<10;i++){
-		if(arr[i]==element)
-		{
-			printf("Element found is:%d i.e.:%d",i,arr[i]);
-			break;
-		}
-		if(i==10)
-		{
-			printf("Element not found");
-		}
+	printf("Enter input element:\n");
+	scanf(" %c",&input);
+	
+	if(input>='A'&& input<='Z'){
+		printf("CAPITAL LETTER.");
+		
+	}
+	else if(input>='a' && input<='z'){
+		printf("Small letter.");
+	}
+	else if(input>='0'&& input<='9')
+	{
+		printf("Digit.");
+	}
+	else{
+		printf("Special symbol.");
 	}
 	
 }
+

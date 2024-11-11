@@ -1,4 +1,4 @@
-//Write a program to check number is Armstrong or not.
+	//Write a program to check number is Armstrong or not.
 //(Hint: A number is Armstrong if the sum of cubes of individual digits of a number
 //is equal to the number itself).
 #include<stdio.h>
