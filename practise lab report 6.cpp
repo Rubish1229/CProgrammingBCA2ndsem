@@ -8,7 +8,7 @@ int main()
 	printf("Enter any number:\n");
 	scanf("%d",&num);
 	temp=num;
-	while(10num>0)
+	while(num>0)
 	{
 		rem=num%10;
 		arm=arm+(rem*rem*rem);

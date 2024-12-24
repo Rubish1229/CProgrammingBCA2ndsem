@@ -14,7 +14,7 @@ void oddeven(int num){
 int main()
 {
 	int num1,num2,num3;
-	int largest;
+	int largest,smallest;
 	printf("Enter num1:");
 	scanf("%d",&num1);
 	printf("Enter num2:");
@@ -36,8 +36,24 @@ int main()
 		largest=num3;
 	}
 	printf("\n");
+	if(num1<num2 && num1<num3)
+	{
+		printf("Num1 is smallest.",num1);
+		smallest=num1;
+		}	
+	else if(num2<num1 && num2<num3)
+	{
+		printf("Num2 is smallest.");
+		smallest=num2;
+	}
+	else{
+		printf("Num3 is smallest.");
+		smallest=num3;
+	}
 	
-	
+	printf("\n");
 	oddeven(largest);
+	printf("\n");
+	oddeven(smallest);
 	return 0;
 }

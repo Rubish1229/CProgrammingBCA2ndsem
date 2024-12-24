@@ -14,7 +14,7 @@ int main()
 	struct employee emp[50];
 	int i;
 	
-	for(i=0;i<30;i++)
+	for(i=0;i<3;i++)
 	{
 		printf("Employee details:\n");
 		printf("Enter id of employee:\n");
@@ -28,7 +28,7 @@ int main()
 		
 	}
 	printf("list of employee address Pokhara:\n");
-	for(i=0;i<=30;i++)
+	for(i=0;i<=3;i++)
 	{
 		if(strcmp(emp[i].empaddress,"pokhara")==0)
 		{

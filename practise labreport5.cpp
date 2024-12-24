@@ -11,5 +11,5 @@ int main()
 	{
 		fact=fact*i;	
 	}
-	printf("The factorila is:%d",fact);
+	printf("The factorial is:%d",fact);
 }
